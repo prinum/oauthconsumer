@@ -6,7 +6,6 @@
 #
 Pod::Spec.new do |s|
   s.name         = "oauthconsumer"
-  s.version      = "0.0.1"
   s.summary      = "Objective-C implementation of an OAuth consumer."
   # s.description  = <<-DESC
   #                   An optional longer description of oauthconsumer
@@ -34,7 +33,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "https://github.com/prinum/oauthconsumer.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/prinum/oauthconsumer.git", :tag => "0.0.2" }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and
