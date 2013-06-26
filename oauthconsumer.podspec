@@ -4,9 +4,10 @@
 #
 # To learn more about the attributes see http://docs.cocoapods.org/specification.html
 #
+version = "0.0.4"
 Pod::Spec.new do |s|
   s.name         = "oauthconsumer"
-  s.version      = "0.0.1"
+  s.version      = version
   s.summary      = "Objective-C implementation of an OAuth consumer."
   # s.description  = <<-DESC
   #                   An optional longer description of oauthconsumer
@@ -34,7 +35,7 @@ Pod::Spec.new do |s|
 
   # Specify the location from where the source should be retrieved.
   #
-  s.source       = { :git => "https://github.com/prinum/oauthconsumer.git", :tag => "v0.0.1" }
+  s.source       = { :git => "https://github.com/prinum/oauthconsumer.git", :tag => version }
 
 
   # If this Pod runs only on iOS or OS X, then specify the platform and
