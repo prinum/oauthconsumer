@@ -4,7 +4,7 @@
 #
 # To learn more about the attributes see http://docs.cocoapods.org/specification.html
 #
-version = "0.0.5"
+version = "0.0.6"
 Pod::Spec.new do |s|
   s.name         = "oauthconsumer"
   s.version      = version
