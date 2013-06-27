@@ -4,7 +4,7 @@
 #
 # To learn more about the attributes see http://docs.cocoapods.org/specification.html
 #
-version = "0.0.8"
+version = "0.0.9"
 Pod::Spec.new do |s|
   s.name         = "oauthconsumer"
   s.version      = version
@@ -84,8 +84,8 @@ Pod::Spec.new do |s|
   # Specify a list of frameworks that the application needs to link
   # against for this Pod to work.
   #
-  s.framework  = 'Security'
-  # s.frameworks = 'SomeFramework', 'AnotherFramework'
+  #s.framework  = 'Security'
+   s.frameworks = 'Security', 'WebKit'
 
   # Specify a list of libraries that the application needs to link
   # against for this Pod to work.
