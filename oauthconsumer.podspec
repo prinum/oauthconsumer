@@ -4,7 +4,7 @@
 #
 # To learn more about the attributes see http://docs.cocoapods.org/specification.html
 #
-version = "0.1.0"
+version = "0.1.1"
 Pod::Spec.new do |s|
   s.name         = "oauthconsumer"
   s.version      = version
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   # path will automatically have '*.{h,m,mm,c,cpp}' appended.
   #
   # s.source_files = 'Classes', 'Classes/**/*.{h,m}'
-  s.source_files = '*.{h,m}', 'Crypto/', 'Categories'
+  s.source_files = '*.{h,m}', 'Crypto/', 'Categories/'
 
   #s.exclude_files = 'Classes/Exclude'
 
