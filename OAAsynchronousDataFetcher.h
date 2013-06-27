@@ -1,9 +1,8 @@
 //
-//  hmac.h
+//  OAAsynchronousDataFetcher.h
 //  OAuthConsumer
 //
-//  Created by Jonathan Wight on 4/8/8.
-//  Copyright 2008 Jonathan Wight. All rights reserved.
+//  Created by Zsombor Szabó on 12/3/08.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +22,24 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-#ifndef HMAC_H
-#define HMAC_H 1
+#import <Foundation/Foundation.h>
 
-extern void hmac_sha1(const u_int8_t *inText, size_t inTextLength, u_int8_t* inKey, const size_t inKeyLength, u_int8_t *outDigest);
+#import "OAMutableURLRequest.h"
 
-#endif /* HMAC_H */
+@interface OAAsynchronousDataFetcher : NSObject {
+    OAMutableURLRequest *request;
+    NSURLResponse *response;
+    NSURLConnection *connection;
+    NSMutableData *responseData;
+    id delegate;
+    SEL didFinishSelector;
+    SEL didFailSelector;	
+}
+
++ (id)asynchronousFetcherWithRequest:(OAMutableURLRequest *)aRequest delegate:(id)aDelegate didFinishSelector:(SEL)finishSelector didFailSelector:(SEL)failSelector;
+- (id)initWithRequest:(OAMutableURLRequest *)aRequest delegate:(id)aDelegate didFinishSelector:(SEL)finishSelector didFailSelector:(SEL)failSelector;
+
+- (void)start;
+- (void)cancel;
+
+@end
